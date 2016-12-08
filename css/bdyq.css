@@ -1,0 +1,225 @@
+.section1{
+    background: url(../img/1.jpg) no-repeat;
+}
+.section2{
+    background: url(../img/2.jpg) no-repeat;
+}
+.section3{
+    background: url(../img/3.jpg) no-repeat;
+}
+.section4{
+    background: url(../img/4.jpg) no-repeat;
+}
+
+#head{
+    width: 100%;
+    height: 50px;
+    background: #168BD8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+}
+#box .section .dayun{
+    background: url(../img/dayun.png);
+    background-position: -300px 0px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 400px;
+    animation: dayun 30s linear infinite;
+}
+#box .section .zhongyun{
+    background: url(../img/zhongyun.png);
+    background-position: 700px 0px;
+    position: absolute;
+    left: 0;
+    top: 320px;
+    width: 100%;
+    z-index: 2;
+    height: 400px;
+    animation: dayun 60s linear infinite;
+}
+#box .section .xiaoyun{
+    background: url(../img/xiaoyun.png);
+    background-position: 700px 0px;
+    position: absolute;
+    left: 0;
+    bottom:50px;
+    width: 100%;
+    z-index: 2;
+    height: 400px;
+    animation: dayun 120s linear infinite;
+}
+@keyframes dayun{
+	from{background-position: 0px 0px}
+	to{background-position: -2000px 0px}
+}
+#box .section1 .content-nei .wenzi_1{
+    position: absolute;
+    left: 130px;
+    top: 300px;
+}
+#box .section1 .content-nei .feiji{
+    position: absolute;
+    left: 417px;
+    top: 300px;
+    animation: feiji 2s linear infinite;
+}
+@keyframes feiji{
+    from{transform: translateY(0px);}
+    50%{
+        transform: translateY(-10px)
+    }
+    to{transform: translateY(0px);}
+}
+.zhao{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 126px;
+    background: #0d71cd;
+}
+.shitou1{
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    
+}
+.shitou2{
+    position: absolute;
+    right: 200px;
+    bottom: 0;
+    
+}
+.shitou3{
+    position: absolute;
+    left: 120px;
+    right: 0;
+    bottom: 60px;
+    margin: auto;
+    
+}
+.chuan{
+    position: absolute;
+    left: 468px;
+    bottom: 89px;
+}
+.dian{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    animation: dian 1s linear infinite;
+}
+@keyframes dian{
+    from{transform: translateY(0px);opacity: 0.5;}
+    50%{
+        transform: translateY(-10px);opacity:1;
+    }
+    to{transform: translateY(0px);opacity: 0.5;}
+}
+.content-nei{
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.text{
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;
+    width: 500px;
+    transform: translate(-30px);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 100;
+}
+.text h2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #FFF;
+    font-size: 12px;
+    transform: translate(-30px);
+    transition: all 1s;
+    font-size: 35px;
+}
+.text p{
+    width: 310px;
+    height: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: 77px;
+    left: 0px;
+    color: #FFF;
+    transform: translate(-30px);
+    transition: all 1s;
+    color: #FFF;
+}
+.left2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    animation: zhuan 3s .3s linear  infinite;
+    transform: translateX(80px);
+    transition: all 1s;
+    opacity: 0;
+}
+.right2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateX(80px);
+    transition: all 1s;
+    opacity: 0;
+}
+#active .left2{
+    opacity: 1;
+    transform: translateX(0px);
+}
+#active .right2{
+    transform: translateX(10px);
+    opacity: 1;
+}
+@keyframes zhuan{
+    from{transform: rotateY(160deg)}
+    50%{
+        transform: rotateY(0deg);
+    }
+    to{transform: rotateY(160deg);}
+}
+.yuan4{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.bottom3{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#active .text{
+    transform: translateX(10px);
+    opacity: 1;
+}
+
+
+
+
+
